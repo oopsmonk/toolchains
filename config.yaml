@@ -47,3 +47,13 @@ esp32_64:
   toolchain_id: "xtensa_esp32_elf_linux64"
   glibc_version: "glibc_2.27.57"
   gcc_version: "5.2.0"
+
+armv6:
+  cpu_type: "armv6"
+  tarball_url: "https://github.com/raspberrypi/tools/archive/49719d5544cd33b8c146235e1420f68cd92420fe.tar.gz"
+  tool_perfix: "arm-linux-gnueabihf"
+  strip_perfix: "tools-49719d5544cd33b8c146235e1420f68cd92420fe"
+  buildroot_dir: "rpi_arm_toolchain/arm-bcm2708/arm-rpi-4.9.3-linux-gnueabihf/arm-linux-gnueabihf"
+  toolchain_id: "rpi_arm_toolchain"
+  glibc_version: "glibc_2.19"
+  gcc_version: "4.9.3"

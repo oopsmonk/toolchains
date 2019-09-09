@@ -25,3 +25,7 @@ build:emscripten --crosstool_top=//tools/emscripten:toolchain
 build:emscripten --cpu=emscripten
 build:emscripten --host_crosstool_top=@bazel_tools//tools/cpp:toolchain
 build:emscripten --copt="-std=c++17"
+
+build:rpi --crosstool_top=//tools/arm-rpi-4.9.3-linux-gnueabihf:rpi-toolchain
+build:rpi --cpu=armv6
+build:rpi --host_crosstool_top=@bazel_tools//tools/cpp:toolchain

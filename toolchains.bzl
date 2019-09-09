@@ -63,6 +63,15 @@ def setup_toolchains():
         sha256 = "a0c2f2c5a897577f40af0fdf68dcf3cf65557ff20c081df26678c066a4fed4b1",
     )
 
+    # raspberry pi
+    http_archive(
+        name = "rpi_arm_toolchain",
+        build_file = "@iota_toolchains//:compilers/arm-rpi-4.9.3-linux-gnueabihf.BUILD",
+        sha256 = "a53ae3539c1f698843213ac045d9ef3aad6462704a8c327c779bb759862ac5fc",
+        strip_prefix = "tools-49719d5544cd33b8c146235e1420f68cd92420fe",
+        url = "https://github.com/raspberrypi/tools/archive/49719d5544cd33b8c146235e1420f68cd92420fe.tar.gz",
+    )
+
 def setup_initial_deps():
     http_archive(
         name = "build_bazel_rules_nodejs",
